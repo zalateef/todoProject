@@ -1,0 +1,111 @@
+html {
+  width: 98%;
+}
+body { 
+  margin: 0;
+}
+.App {
+    width: 100%;
+    height: 90vh;
+    padding: 1rem;
+    font-family: sans-serif;
+  }
+
+  input[type=text] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+
+  .wrapper {
+    width: 600px;
+    margin: 0 auto;
+    padding: 8px;
+  }
+  
+  .addTodo {
+    padding: 5px;
+    margin-bottom: 8px;
+  }
+  .center {
+    text-align: center;
+  }
+
+  .addBtn {
+    width: 100%;
+    background-color: #4CAF50;
+    color: white;
+    font-size: 16px;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  .btn {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    border-radius: 4px;
+    color: white;
+    padding: 8px 16px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+    margin: 4px 2px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+  }
+  .doneBtn {
+    background-color: white; 
+    color: black; 
+    border: 2px solid #4CAF50;
+    
+  }
+  .doneBtn:hover {
+    background-color: #4CAF50;
+    color: white;
+  }
+  .delBtn {
+    background-color: white; 
+    color: black; 
+    border: 2px solid #f44336;
+  }
+  
+  .delBtn:hover {
+    background-color: #f44336;
+    color: white;
+  }
+  
+  .list {
+    padding: 5px;
+  }
+  
+  .item {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 32px;
+    margin-bottom: 5px;
+    padding: 5px;
+    border: 1px solid lightblue;
+    border-radius: 5px;
+  }
+  
+  .itemTitle {
+    width: 70%;
+    text-align: left;
+    display: block;
+    overflow: hidden;
+    
+  }
+  
+  .itemControls {
+    display: block;
+  }
