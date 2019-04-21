@@ -17,7 +17,10 @@ const Todo = ({ handleComplete, handleDelete, completed, title }) => {
       </div>
 
       <div className="itemControls">
-        <button className = 'btn doneBtn' onClick={handleComplete} disabled={completed}>
+        <button className = {`btn doneBtn ${completed && 'disabled'}`}
+                onClick={handleComplete}
+                disabled={completed}
+        >
         Done
         </button>
         <button className = 'btn delBtn' onClick={handleDelete}>Delete</button>
