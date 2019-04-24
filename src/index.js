@@ -6,7 +6,6 @@ import store from "./store";
 
 import "./styles/styles.css";
 
-
 const rootElement = document.getElementById("root");
 
 render(

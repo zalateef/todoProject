@@ -1,6 +1,6 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import { addTodo } from '../actions';
+import { fetchAdd } from '../actions';
 
 const AddTodo = ({ dispatch }) => {
   
@@ -11,7 +11,7 @@ const AddTodo = ({ dispatch }) => {
     if (!todo) {
         return
     } else {
-      dispatch(addTodo(todo));
+      dispatch(fetchAdd(todo));
       e.target.elements.todo.value = "";
     }
   };
