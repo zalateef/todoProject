@@ -31,7 +31,7 @@ export default (state = initialState, action) => {
       return {
         ...state,
         loading: false,
-        todos: action.payload.todosList
+        todos: action.payload.todos
       }
     case FETCH_ADD_FAILURE:
       return {
@@ -51,7 +51,7 @@ export default (state = initialState, action) => {
       return {
         ...state,
         loading: false,
-        todos: action.payload.todosList
+        todos: action.payload.todos
       }
     case FETCH_COMPLETE_FAILURE:
       return {
@@ -71,7 +71,7 @@ export default (state = initialState, action) => {
       return {
         ...state,
         loading: false,
-        todos: action.payload.todosList
+        todos: action.payload.todos
       }
     case FETCH_DELETE_FAILURE:
       return {
@@ -92,7 +92,7 @@ export default (state = initialState, action) => {
       return {
         ...state,
         loading: false,
-        todos: action.payload.todosList
+        todos: action.payload.todos
       };
 
     case FETCH_TODOS_FAILURE:
