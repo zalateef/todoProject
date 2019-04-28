@@ -7,9 +7,9 @@ export const fetchAddBegin = () => ({
   type: FETCH_ADD_BEGIN
 });
 
-export const fetchAddSuccess = todosList => ({
+export const fetchAddSuccess = todos => ({
   type: FETCH_ADD_SUCCESS,
-  payload:  {todosList} 
+  payload:  {todos} 
 });
 
 export const fetchAddFailure = error => ({
@@ -55,9 +55,9 @@ export const fetchDeleteBegin = () => ({
   type: FETCH_DELETE_BEGIN
 });
 
-export const fetchDeleteSuccess = todosList => ({
+export const fetchDeleteSuccess = todos => ({
   type: FETCH_DELETE_SUCCESS,
-  payload:  {todosList} 
+  payload:  {todos} 
 });
 
 export const fetchDeleteFailure = error => ({
@@ -89,16 +89,16 @@ export function fetchDelete(id) {
 
 ////////////// Complete a To-Do
 export const FETCH_COMPLETE_BEGIN   = 'FETCH_COMPLETE_BEGIN';
-export const FETCH_COMPLETE_SUCCESS = 'FETCH_COMPLE-++TE_SUCCESS';
+export const FETCH_COMPLETE_SUCCESS = 'FETCH_COMPLETE_SUCCESS';
 export const FETCH_COMPLETE_FAILURE = 'FETCH_COMPLETE_FAILURE';
 
 export const fetchCompleteBegin = () => ({
   type: FETCH_COMPLETE_BEGIN
 });
 
-export const fetchCompleteSuccess = todosList => ({
+export const fetchCompleteSuccess = todos => ({
   type: FETCH_COMPLETE_SUCCESS,
-  payload:  {todosList} 
+  payload:  {todos} 
 });
 
 export const fetchCompleteFailure = error => ({
@@ -136,9 +136,9 @@ export const fetchTodosBegin = () => ({
   type: FETCH_TODOS_BEGIN
 });
 
-export const fetchTodosSuccess = todosList => ({
+export const fetchTodosSuccess = todos => ({
   type: FETCH_TODOS_SUCCESS,
-  payload:  {todosList}
+  payload:  {todos}
 });
 
 export const fetchTodosFailure = error => ({
