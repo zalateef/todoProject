@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types';
 import Todo from "./Todo";
+import Spinner from './Spinner';
 
 export default class TodoList extends Component {
 
@@ -22,7 +23,7 @@ export default class TodoList extends Component {
         // if no todos show nice message
         todos.length === 0 && <p>Please add a todo to get started!</p>
       }
-      {loading && <div>Loading...</div>}
+      {loading && <Spinner/>}
       {todos.map(todo =>
         <Todo 
           key={todo.id}
